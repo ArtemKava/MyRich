@@ -13,5 +13,4 @@ class App:
                               "for now this a all information for base test")
         interface.give_signal("message", "DONE")
 if __name__ == '__main__':
-    print("Hello World")
     app = App()
