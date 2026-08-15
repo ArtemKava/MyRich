@@ -190,9 +190,10 @@
   },
   "active": "52e7e8bd8975ce2e",
   "lastOpenFiles": [
-    "interfaces/Console.py~",
-    "bin/Score.py~",
+    "bin/User.py~",
     "main.py~",
+    "bin/Score.py~",
+    "interfaces/Console.py~",
     "interfaces/Console.py",
     "interfaces",
     "iterfaces/Console.py~",
@@ -200,7 +201,6 @@
     "iterfaces/standart_interface.py",
     "iterfaces",
     "bin/iterfaces",
-    "main.py",
     "Plans.md"
   ]
 }
