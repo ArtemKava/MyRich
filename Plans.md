@@ -1,7 +1,7 @@
 ### Base
-- [ ] add receipt money
-- [ ] add decrease money
-- [ ] add create new score
+- [x] add receipt money
+- [x] add decrease money
+- [x] add create new score
 
 ### Pre-release upgrade
 - [ ] add custom kind of decrease
