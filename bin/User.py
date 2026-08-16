@@ -1,4 +1,5 @@
 from bin.Score import Score
+from datetime import datetime
 
 
 class User:
@@ -10,11 +11,13 @@ class User:
     def create_new_score(self, score_name: str):
         self._scores[score_name] = Score(score_name)
 
-    def transaction(self, from_name: str, to_name: str, sum: float):
-        self._scores[from_name].decrease_money(sum) if from_name in self._scores else None
-        self._scores[to_name].increase_money(sum) if to_name in self._scores else None
+    @property
+    def name(self) -> str:
+        return self._name
 
+    def __getitem__(self, key: str) -> Score:
+        return self._scores[key]
 
-    def __str__(self):
+    def __str__(self) -> str:
         return (f"User {self._name} {self._surname}\n"+
                 "\n".join(f"   |Score: {str(score)}" for score in self._scores.values()))

@@ -1,3 +1,6 @@
+from decimal import Decimal
+
+
 class Score:
     def __init__(self, score_name: str):
         self._score_name = score_name
@@ -6,10 +9,10 @@ class Score:
     def __str__(self):
         return f"{self._score_name} has {self.__money} money"
 
-    def decrease_money(self, sum: float):
-        self.__money -= sum
-    def increase_money(self, sum: float):
-        self.__money += sum
+    def decrease_money(self, amount: Decimal):
+        self.__money -= amount
+    def increase_money(self, amount: Decimal):
+        self.__money += amount
 
 
     @property
