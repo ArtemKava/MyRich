@@ -1,14 +1,20 @@
 from bin.Score import Score
-from datetime import datetime
 
 
 class User:
+    """
+    Class representing a user
+    """
     def __init__(self, name: str, surname: str):
         self._name = name
         self._surname = surname
         self._scores: dict[str, Score] = dict()
 
     def create_new_score(self, score_name: str):
+        """
+        Create a new score
+        :param score_name: name of the new score
+        """
         self._scores[score_name] = Score(score_name)
 
     @property
